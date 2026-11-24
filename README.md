@@ -1,35 +1,20 @@
 # Bahrain Sales Channel Intelligence
 
-A standalone browser-based interactive dashboard for the Bahrain telecom sales channel.
+Interactive browser dashboard with 700 synthetic agents and 28,000 activation records.
 
-## Run locally
-
-Open `index.html` directly in a browser, or serve the repository:
+## Local preview
 
 ```bash
 python3 -m http.server 8000
 ```
 
-Then visit `http://localhost:8000`.
+Open `http://localhost:8000`.
 
 ## GitHub Pages
 
-1. Open the repository **Settings**.
-2. Select **Pages**.
-3. Under **Build and deployment**, choose **Deploy from a branch**.
-4. Select **main** and `/ (root)`.
-5. Save.
+1. Open **Settings → Pages**.
+2. Select **Deploy from a branch**.
+3. Choose **main** and **/(root)**.
+4. Save and wait 1–3 minutes.
 
-The dashboard generates 28,000 deterministic synthetic activation records in the browser. No backend or database is required.
-
-## Features
-
-- Executive, sales, agent, customer, map, revenue, partner, target and record views
-- Date, agent, activation area, partner and nationality filters
-- Interactive area and partner analysis
-- Leaflet/OpenStreetMap activation map
-- Agent leaderboard and target tracking
-- Customer record search
-- CSV export
-
-All customer names, mobile numbers and CPR references are fictional. The prototype target is 40 activations per agent per selected period.
+The dashboard is written in a single `index.html` file and requires no build step or database.
